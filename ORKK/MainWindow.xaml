@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ORKK"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Over de Rhein Kraan Keuringen " Height="450" Width="800" Topmost="True" Icon="craneIcon.ico">
     <Grid>
-        
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFFBFFFF" Offset="1"/>
+                <GradientStop Color="#FFA8F7FF"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Image x:Name="logo" Source="images/logo.png" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="74" Margin="0,-7,0,0"/>
+
     </Grid>
 </Window>
