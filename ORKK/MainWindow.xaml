@@ -5,15 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ORKK"
         mc:Ignorable="d"
-        Title="Over de Rhein Kraan Keuringen " Height="450" Width="800" Topmost="True" Icon="craneIcon.ico">
-    <Grid>
+        Title="Over de Rhein Kraan Keuringen " Height="1080" Width="1920" Topmost="True" Icon="craneIcon.ico" MinWidth="1920" MinHeight="1080">
+    <Grid Margin="1,0,-1,-1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="134*"/>
+            <ColumnDefinition Width="795*"/>
+            <ColumnDefinition Width="27*"/>
+        </Grid.ColumnDefinitions>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="#FFFBFFFF" Offset="1"/>
-                <GradientStop Color="#FFA8F7FF"/>
+                <GradientStop Color="#FFC5FFFF"/>
+                <GradientStop Color="#FFA8F7FF" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Image x:Name="logo" Source="images/logo.png" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="74" Margin="0,-7,0,0"/>
+        <Image x:Name="logo" Source="images/logo.png" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="74" Margin="322,0,0,0" Grid.Column="1"/>
+        <Label x:Name="logoNameLabel" Content="Over de Rhein Kraan - Keuringen" HorizontalAlignment="Left" Margin="401,7,0,0" VerticalAlignment="Top" Height="57" Width="538" FontSize="36" Grid.Column="1"/>
+        <Border
+        BorderThickness="2"
+        BorderBrush="Black"
+        HorizontalAlignment="Left"
+        VerticalAlignment="Top"
+        Width="1799"
+        Height="728" Margin="49,195,0,0" Grid.ColumnSpan="2">
+            <Border.Background>
+                <SolidColorBrush Color="White" Opacity="0.7"/>
+            </Border.Background>
+
+            <Canvas Height="400" Width="400">
+
+            </Canvas>
+
+        </Border>
+        <Button x:Name="exitButton" Content="Exit" Grid.Column="1" HorizontalAlignment="Left" Margin="921,963,0,0" VerticalAlignment="Top" Width="198" Height="47"/>
 
     </Grid>
 </Window>
